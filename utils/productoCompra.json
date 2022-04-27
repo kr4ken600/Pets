@@ -1,0 +1,17 @@
+[
+    {
+        "imgn":"img/COMIDA PERRO/imagen5.jpg", 
+        "marca":"Royal Canin", 
+        "nombre":"Mini Ageing",
+        "peso":"Peso del producto: - 12 kg",
+        "precio": "136.37"
+    },
+    {
+        "imgn":"img/DESCANSO PERRO/descanso2.jpg", 
+        "marca":"Trixie", 
+        "nombre":"Tapete Esponja",
+        "peso":"Color: - Rojo",
+        "precio": "183.66"
+    }
+    
+]

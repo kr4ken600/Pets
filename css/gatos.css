@@ -1,0 +1,65 @@
+:root{
+    --color-base:   #1BA8F0;
+    --color-red:    #C81E27;
+    --color-azul:   #2FB09A;
+    --color-black:  #000000;
+    --color-white:  #FFFFFF;
+    --color-bordes: #DDDDDD;
+    --color-gost:   #4e4a4a;
+}
+
+.rounded-pill{
+    border: #DDDDDD 3px solid;
+    color: var(--color-black);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rounded-pill:hover{
+    background-color: var(--color-base);
+    color: var(--color-white);
+}
+
+.selection-grand{
+    background-color: var(--color-azul);
+}
+
+.selection-med{
+    color: var(--color-base);
+}
+
+.relleno-azul{
+    padding: 20px 0 20px 0;
+}
+
+.nombre-producto{
+    font-size: 13px;
+}
+
+.oferta-producto{
+    font-size: 18px;
+    color: var(--color-red);
+}
+
+.descuento-producto{
+    font-size: 12px;
+    background-color: var(--color-red);
+    padding-left: 4px;
+    padding-right: 4px;
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.opc-producto{
+    font-size: 10px;
+    color: var(--color-gost);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+a:hover{
+    color: var(--color-azul);
+}

@@ -1,0 +1,83 @@
+[
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida1.jpeg",
+        "nombre": "HFC Natural - Almo",
+        "precio": "$140.59",
+        "oferta": "$136.37",
+        "descuento": "- $4.22",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida2.jpeg",
+        "nombre": "Royal Canin - Fibre Response",
+        "precio": "$120.80",
+        "oferta": "$117.18",
+        "descuento": "- $3.62",
+        "opciones": "400gr - 2kl - 4kl"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida3.png",
+        "nombre": "Orijen - Original Cat",
+        "precio": "$363.65",
+        "oferta": "$360.50",
+        "descuento": "- $3.15",
+        "opciones": "400gr - 2kl - 4kl"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida4.jpg",
+        "nombre": "Leonardo - Fisch",
+        "precio": "$289.99",
+        "oferta": "$280.99",
+        "descuento": "- $9.00",
+        "opciones": "400gr - 2kl - 4kl"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida5.jpg",
+        "nombre": "Royal Canin - Maine Coon",
+        "precio": "$120.80",
+        "oferta": "$117.18",
+        "descuento": "- $3.62",
+        "opciones": "400gr - 2kl - 4kl"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida6.jpg",
+        "nombre": "Royal Canin - Calm",
+        "precio": "$120.80",
+        "oferta": "$117.18",
+        "descuento": "- $3.62",
+        "opciones": "400gr - 2kl - 4kl"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida7.png",
+        "nombre": "wetfoot - Petfield",
+        "precio": "$1143.60",
+        "oferta": "$1109.29",
+        "descuento": "- $34.31",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida8.jpeg",
+        "nombre": "Lily's Kitchen - Smooth Paté",
+        "precio": "$123.103.60",
+        "oferta": "$119.41",
+        "descuento": "- $3.69",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida9.jpeg",
+        "nombre": "Monge Grill - Grill Cat",
+        "precio": "$123.103.60",
+        "oferta": "$119.41",
+        "descuento": "- $3.69",
+        "opciones": "Caja 12pz x 85g"
+    }
+    ,
+    {
+        "imagen": "../../img/COMIDA_GATOS/comida10.png",
+        "nombre": "Royal Canin - Gastrointestinal",
+        "precio": "$120.80",
+        "oferta": "$117.18",
+        "descuento": "- $3.62",
+        "opciones": "400gr - 2kl - 4kl"
+    }
+]

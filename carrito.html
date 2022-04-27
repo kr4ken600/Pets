@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/064783c06b.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <title>Mi Carrito</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-2 navbar-brand">
+                    <a href="index.html"><img src="img/logo.png" width="50%"></a>
+                </div>
+                <!-- Buscador -->
+                <div class="col-6">
+                    <div class="row mx-auto align-items-center">
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="text" placeholder="Buscar Producto" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                    <i class="fa fa-microphone" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="navbar-nav">
+                                <div>
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="productos/perros/comida.html">Perros</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="productos/gatos/comida.html">Gatos</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="productos/roedores/comida.html">Roedores</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="#">Ofertas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Usuario -->
+                <div class="col mt-2">
+                    <div class="row mx-auto text-center align-items-center">
+                        <div class="col-4 ">
+                            <img src="img/soporte.png" width="40%">
+                            <h6><a class="nav-link" href="#">Soporte</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/usuario.png" width="40%">
+                            <h6><a class="nav-link" href="user/logout.html">Usuario</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/carrito.png" width="40%">
+                            <h6><a class="nav-link" href="carrito.html">Carrito</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido -->
+    <div class="content">
+        <div class="row mt-5 mb-3">
+            <h3 class="title">Mi Carrito</h3>
+        </div>
+        <div class="row">
+            <!-- Informacion de la Izq -->
+            <div class="col-8 me-4">
+                <!-- Primer Contenedor de informacion -->
+                <div class="row">
+                    <div class="col border border-2 rounded-3">
+                        <!-- Primer Fila (Pedido Programado) -->
+                        <div class="row mb-3 ps-5 pe-5 pt-3 pb-3 justify-content-between">
+                            <div class="col-4">
+                                <div class="row align-items-center">
+                                    <h6><img src="img/programado2.svg" class="img-svg">Pedido Programado</h6>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <p class="question funciona">
+                                    <span><i class="fa fa-question-circle-o fa-1x"></i></span>
+                                    Como funciona
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Segunda Fila (Ahorro de la sig compra) -->
+                        <div class="row ps-5 pe-5 pt-3 pb-3">
+                            <h4>
+                                <span><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                Ahorrar - $10,47 para siempre en mis próximos pedidos programados</h4>
+                            <p>
+                                Comprar ahora y programar mis siguientes pedidos. El descuento se aplicará a partir del segundo pedido. el Precio puede variar.
+                            </p>
+                        </div>
+                        <!-- Tercera Fila (Compra unic) -->
+                        <div class="row mb-3 ps-5 pe-5 pt-3 pb-3">
+                            <h3 class="title">
+                                <span><i class="fa fa-check fa-1x" aria-hidden="true"></i></span>
+                                Compra única
+                            </h3>
+                            <p>Sólo quiero recibir una vez este pedido</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo Contenedor de informacion -->
+                <div class="row mt-5 mb-3">
+                    <h4 class="question">Productos</h4>
+                </div>
+                <!-- Fila de Productos (Dinamica) -->
+                <div class="row mb-5">
+                    <div class="col border border-2 rounded-3" id="pedidos"></div>
+                </div>
+            </div>
+            <!-- Infomacion de la Der -->
+            <div class="col">
+                <div class="row mb-5">
+                    <div class="col border border-2 rounded-3">
+                        <!-- Titulo -->
+                        <div class="row justify-content-evenly ps-5 pe-5 pt-3 pb-3">
+                            <div class="col">
+                                <h4>Total Productos</h4>
+                            </div>
+                            <div class="col-4">
+                                <h4 id="precio"></h4>
+                            </div>
+                        </div>
+                        <!-- Opcion de donacion -->
+                        <div class="row text-center ms-2 me-2 mb-3 ps-2 pe-2 pt-3 pb-3 border border-2 rounded-3 donacion">
+                            <div class="col-2">
+                                <h5>Dono</h5>
+                            </div>
+                            <div class="col-5">
+                                <select class="border border-2 rounded-3 comboBX" name="select" id="comboBX">
+                                    <option value="0" selected>$0</option>
+                                    <option value="10">$10</option>
+                                    <option value="20">$20</option>
+                                  </select>
+                            </div>
+                            <div class="col-5">
+                                <p>a mascotas sin hogar</p>
+                            </div>
+                        </div>
+                        <!-- Informacion del total -->
+                        <div class="row justify-content-evenly ps-5 pe-5 pt-3 pb-3">
+                            <div class="col">
+                                <h2>Total</h2>
+                            </div>
+                            <div class="col-4">
+                                <h2 id="totalPago"></h2>
+                            </div>
+                        </div>
+                        <!-- Boton de pago -->
+                        <div class="row mb-5 ps-5 pe-5 pt-3 pb-3">
+                            <button type="button" id="btnPagar" class="btn btn-info" style="width: 100%;">Ir a Pagar</button>
+                        </div>
+                        <div class="row text-center ps-5 pe-5 pt-3 pb-3">
+                            <p class="question">COMPRA 100% SEGURA</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Informacion de envio -->
+                <div class="row">
+                    <p>
+                        <img src="img/envio.svg" class="img-svg-envio">
+                        Los gastos de envío se calculan en el siguiente paso en función de la direccion y método de envío
+                    </p>
+                </div>
+                <!-- Informacion de descuentos -->
+                <div class="row">
+                    <p>
+                        <img src="img/descuento.svg" class="img-svg-envio">
+                        ¿Tienes un <b>cupón de descuento</b>? Podrás añadirlo en el siguiente paso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/pedidos.js"></script>
+</body>
+</html>

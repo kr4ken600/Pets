@@ -1,0 +1,62 @@
+[
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes1.jpg",
+        "nombre": "Trixie - Pelota de Heno",
+        "precio": "$15.00",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes2.jpg",
+        "nombre": "Trixie - Juego interactivo Snack",
+        "precio": "$249.89",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes3.jpg",
+        "nombre": "Trixie - Esfera para Hamnster",
+        "precio": "$123.74",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes4.jpg",
+        "nombre": "Trixie - Casa de Juegos",
+        "precio": "$1300.49",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes5.jpg",
+        "nombre": "Trixie - Casa de Juegos",
+        "precio": "$1300.49",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes6.jpg",
+        "nombre": "Trixie - Casa de Juegos",
+        "precio": "$1300.49",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes7.jpg",
+        "nombre": "Trixie - Casa de Juegos",
+        "precio": "$1300.49",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes8.jpg",
+        "nombre": "Living World - Juguete Teach N Treat",
+        "precio": "$436.38",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes9.jpg",
+        "nombre": "Trixie - MORDILLOS DE MADERA Y LOOFAH Fresa",
+        "precio": "$196.89",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_ROEDORES/juguetes10.jpg",
+        "nombre": "Trixie - Esfera para Hamnster",
+        "precio": "$123.74",
+        "opciones": "1 pz"
+    }
+]

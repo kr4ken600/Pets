@@ -1,0 +1,41 @@
+:root{
+    --color-base:   #1BA8F0;
+    --color-red:    #C81E27;
+    --color-azul:   #2FB09A;
+    --color-black:  #000000;
+    --color-white:  #FFFFFF;
+    --color-bordes: #DDDDDD;
+    --color-gost:   #F1F1F1;
+}
+
+
+.unselect{
+    background-color: var(--color-gost);
+}
+
+.gost{
+    display: none;
+}
+
+.container-form{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.linea {
+    border-top: 1px solid var(--color-gost);
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+
+.message{
+    display: none;
+}
+
+.messageView{
+    display: block;
+    color: var(--color-red);
+    font-size: 12px;
+    font-weight: bold;
+}

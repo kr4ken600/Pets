@@ -1,0 +1,82 @@
+[
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen1.jpg",
+        "nombre": "Coatex - Shampoo medico",
+        "precio": "$378.60",
+        "oferta": "$367.24",
+        "descuento": "- $11.36",
+        "opciones": "1 bote de 360 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen2.jpg",
+        "nombre": "Neo - La Cristal",
+        "precio": "$129.72",
+        "oferta": "$125.83",
+        "descuento": "- $3.89",
+        "opciones": "1 bote de 100 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen3.jpg",
+        "nombre": "Artero - Cepillo para pelo",
+        "precio": "$81.89",
+        "oferta": "$79.43",
+        "descuento": "- $2.46",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen4.jpg",
+        "nombre": "Clunia - Maintenance Zn gel",
+        "precio": "$78.72",
+        "oferta": "$76.36",
+        "descuento": "- $2.36",
+        "opciones": "1 bote de 59 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen5.jpg",
+        "nombre": "Virbac - Allermyl Shampoo",
+        "precio": "$295.20",
+        "oferta": "$286.34",
+        "descuento": "- $8.86",
+        "opciones": "1 bote de 200 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen6.jpg",
+        "nombre": "Stanvet - DentiVet",
+        "precio": "$129.72",
+        "oferta": "$125.83",
+        "descuento": "- $3.89",
+        "opciones": "1 bote de 250 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen7.jpg",
+        "nombre": "PYO - DouxoS3",
+        "precio": "$378.60",
+        "oferta": "$367.24",
+        "descuento": "- $11.36",
+        "opciones": "1 bote de 250 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen8.jpg",
+        "nombre": "Cutania - Shampoo",
+        "precio": "$101.96",
+        "oferta": "$98.90",
+        "descuento": "- $3.06",
+        "opciones": "1 bote de 237 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen9.jpg",
+        "nombre": "dermoscent - Bio Balm",
+        "precio": "$521.00",
+        "oferta": "$505.00",
+        "descuento": "- $16.00",
+        "opciones": "1 bote de 50 ml"
+    },
+    {
+        "imagen": "../../img/HIGIENE PERRO/imagen10.jpg",
+        "nombre": "FURminator - FURejector",
+        "precio": "$680.76",
+        "oferta": "$675.28",
+        "descuento": "- $5.48",
+        "opciones": "1 pz"
+    }
+]

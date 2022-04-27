@@ -1,0 +1,82 @@
+[
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida1.jpg",
+        "nombre": "Cominter - Alfalfa",
+        "precio": "$53.54",
+        "oferta": "$49.44",
+        "descuento": "- $4.30",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida2.jpg",
+        "nombre": "Cominter - Heno",
+        "precio": "$81.91",
+        "oferta": "$79.45",
+        "descuento": "- $2.46",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida3.jpg",
+        "nombre": "Cominter - Lecho de madera",
+        "precio": "$74.87",
+        "oferta": "$72.62",
+        "descuento": "- $2.25",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida4.jpg",
+        "nombre": "Cominter - Alfalfa",
+        "precio": "$79.26",
+        "oferta": "$73.13",
+        "descuento": "- $6.13",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida5.jpg",
+        "nombre": "Cominter - Alfalfa",
+        "precio": "$53.54",
+        "oferta": "$49.44",
+        "descuento": "- $4.30",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida6.jpeg",
+        "nombre": "Cominter - Maiz",
+        "precio": "$177.46",
+        "oferta": "$172.11",
+        "descuento": "- $5.32",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida7.jpg",
+        "nombre": "Cominter - Alfalfa",
+        "precio": "$151.15",
+        "oferta": "$146.62",
+        "descuento": "- $4.53",
+        "opciones": "250gr - 380gr - 1kg"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida8.jpeg",
+        "nombre": "Cominter - Flor de azhar",
+        "precio": "$140.59",
+        "oferta": "$136.37",
+        "descuento": "- $4.22",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida9.jpeg",
+        "nombre": "Cominter - Ostiga verde",
+        "precio": "$140.59",
+        "oferta": "$136.37",
+        "descuento": "- $4.22",
+        "opciones": "100gr - 250gr - 380gr"
+    },
+    {
+        "imagen": "../../img/COMIDA_ROEDORES/comida10.jpeg",
+        "nombre": "Cominter - Heno",
+        "precio": "$81.91",
+        "oferta": "$79.45",
+        "descuento": "- $2.46",
+        "opciones": "100gr - 250gr - 380gr"
+    }
+]

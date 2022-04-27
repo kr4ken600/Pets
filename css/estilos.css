@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+    --color-base:   #1BA8F0;
+    --color-red:    #C81E27;
+    --color-azul:   #2FB09A;
+    --color-black:  #000000;
+    --color-white:  #FFFFFF;
+}
+
+/* ============================================= */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: var(--color-white);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-navbar{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-index{
+    margin: auto;
+    width: 80%;
+}
+
+nav {
+  background: var(--color-base);
+  padding: 5px 20px;
+  height: auto;
+}
+
+
+/* NAVBAR */
+.logo-img{
+    width: 50%;
+}
+
+.buscador-input{
+    width: 500px;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    width: 500px;
+    text-align: center;
+    margin-top: 1em;
+}
+  
+li {
+    display: inline;
+    margin-right: 1em;
+}
+
+li>a{
+    text-decoration: none;
+    color: var(--color-white);
+    padding-left: 1em;
+}
+
+.border-navbar{
+    border-left: var(--color-black) 2px solid;
+    
+}
+
+.personal-navbar{   
+    margin-top: 10px;
+    width: 200px;
+    display: flex;
+    text-align: center;
+}
+
+.personal-cont>h5{
+    color: var(--color-white);
+}
+
+
+/* Contenido Index */
+
+.sec-img-cabeza{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-img-cabeza{
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.img-cabeza{
+    width: 100%;
+}
+
+.sec-datos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 29px;
+}
+
+.resaltado-rojo, .resaltado-rojo-btn{
+    background-color: var(--color-red);
+    border: var(--color-black) 2px solid;
+    color: var(--color-white);
+}
+
+.resaltado-azul{
+    background-color: var(--color-base);
+    border: var(--color-black) 2px solid;
+    color: var(--color-white);
+}
+
+.resaltado-azul, .resaltado-rojo{
+    width: 20%;
+    height: 102px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.sec-descripcion{
+    text-align: center;
+    margin-bottom: 29px;
+}
+.desc-titulo{
+    color: var(--color-base);
+    font-weight: bold;
+}
+.desc-desc{
+    font-weight: bold;
+}
+.resaltado-verde{
+    background-color: var(--color-azul);
+    border: var(--color-black) 2px solid;
+    color: var(--color-white);
+    width: 35%;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-datos{
+    text-align: center;
+}
+.img-datos{
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+[
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen1.jpg",
+        "nombre": "Royal Canin - Puppy Mini",
+        "precio": "$140.59",
+        "oferta": "$136.37",
+        "descuento": "- $4.22",
+        "opciones": "7.5kg - 12kg - 14.5kg"
+    },
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen2.png",
+        "nombre": "Traveness - Pienso Natural",
+        "precio": "$375.29",
+        "oferta": "$326.50",
+        "descuento": "- $48.79",
+        "opciones": "7.5kg - 12kg - 14.5kg"
+    },
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen3.jpg",
+        "nombre": "Royal Canin - Pomeranian",
+        "precio": "$260.35",
+        "oferta": "$245.35",
+        "descuento": "- $15.00",
+        "opciones": "7.5kg - 12kg - 14.5kg"
+    },
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen4.png",
+        "nombre": "Traveness - Comida Humeda",
+        "precio": "$46.71",
+        "oferta": "$45.31",
+        "descuento": "- $1.40",
+        "opciones": "400gr"
+    },
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen5.jpg",
+        "nombre": "Royal Canin - Mini Ageing",
+        "precio": "$140.59",
+        "oferta": "$136.37",
+        "descuento": "- $4.22",
+        "opciones": "7.5kg - 12kg - 14.5kg"
+    },
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen6.jpg",
+        "nombre": "Hantu - Adult Pollo",
+        "precio": "$328.35",
+        "oferta": "$318.50",
+        "descuento": "- $9.85",
+        "opciones": "7.5kg - 12kg - 14.5kg"
+    },
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen8.png",
+        "nombre": "Condro Vet - Razas Grandes Forcea",
+        "precio": "$327.41",
+        "oferta": "$317.59",
+        "descuento": "- $9.82",
+        "opciones": "1 bote 80 tabletas"
+    },
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen9.jpg",
+        "nombre": "Bioperr - Entero Chronic",
+        "precio": "$200.92",
+        "oferta": "$198.37",
+        "descuento": "- $2.55",
+        "opciones": "1 bote 30 tabletas"
+    }
+    ,
+    {
+        "imagen": "../../img/COMIDA PERRO/imagen10.jpg",
+        "nombre": "Strat - Anima",
+        "precio": "$140.59",
+        "oferta": "$136.37",
+        "descuento": "- $4.22",
+        "opciones": "600 ml"
+    }
+]

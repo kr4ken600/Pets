@@ -1,0 +1,62 @@
+[
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso1.jpg",
+        "nombre": "Trixie - Cama acolchonada",
+        "precio": "$409.89",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso2.jpeg",
+        "nombre": "Trixie - Hamaca de peluche",
+        "precio": "$196.30",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso3.jpg",
+        "nombre": "Trixie - Tapete de peluche",
+        "precio": "$130.32",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso4.jpeg",
+        "nombre": "Trixie - Cama acolchonada puerquito",
+        "precio": "$482.99",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso5.jpg",
+        "nombre": "Trixie - Tapete de peluche",
+        "precio": "$217.54",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso6.jpeg",
+        "nombre": "Trixie - Almohada",
+        "precio": "$176.33",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso7.jpeg",
+        "nombre": "Trixie - Cama acolchonada",
+        "precio": "$266.22",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso8.jpeg",
+        "nombre": "Trixie - Hamaca de peluche",
+        "precio": "$133.27",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso9.jpeg",
+        "nombre": "Trixie - Almo",
+        "precio": "$140.59",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO_GATOS/descanso10.jpeg",
+        "nombre": "Trixie - Cama acolchonada arco",
+        "precio": "$810.39",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    }
+]

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/064783c06b.js"></script>
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/logout.css" rel="stylesheet">
+    <title>Usuario</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-2">
+                    <a href="../index.html"><img src="../img/logo.png" width="50%"></a>
+                </div>
+                <!-- Buscador -->
+                <div class="col-6">
+                    <div class="row mx-auto align-items-center">
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="text" placeholder="Buscar Producto" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                    <i class="fa fa-microphone" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="navbar-nav">
+                                <div>
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="../productos/perros/comida.html">Perros</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="../productos/gatos/comida.html">Gatos</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="../productos/roedores/comida.html">Roedores</a>
+                                </div>
+                                <div class="separador-link">
+                                    <a class="nav-link" href="#">Ofertas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Usuario -->
+                <div class="col mt-2">
+                    <div class="row mx-auto text-center align-items-center">
+                        <div class="col-4 ">
+                            <img src="../img/soporte.png" width="40%">
+                            <h6><a class="nav-link" href="#">Soporte</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <img src="../img/usuario.png" width="40%">
+                            <h6><a class="nav-link" href="logout.html">Usuario</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <img src="../img/carrito.png" width="40%">
+                            <h6><a class="nav-link" href="../carrito.html">Carrito</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido -->
+    <div class="container mx-auto align-items-center">
+        <div class="row mt-5 mb-5">
+            <div class="col border border-2 rounded-3">
+                <div class="row text-center">
+                    <!-- Botones de cabeza -->
+                    <div class="col py-3 btn" id="iniciar">
+                        Iniciar Sesión
+                    </div>
+                    <div class="col py-3 btn unselect" id="crear">
+                        Crear Cuenta
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Iniciar Sesion -->
+                    <div class="col py-5 px-5" id="dIniciar"  style="height: 80%;">
+                        <div class="container-form">
+                            <div class="row">
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label title" for="email">CORREO ELECTRÓNICO</label>
+                                            <input type="email" id="email" class="form-control" placeholder="Escribe tu e-mail">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label title" for="pass">CONTRASEÑA</label>
+                                            <input type="password" id="pass" class="form-control" placeholder="Escribe tu Contraseña">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 message" id="message">
+                                        <div class="col">
+                                            <p id="error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col d-grid gap-2">
+                                            <button type="button" class="btn btn-primary py-3" id="initS">
+                                                <i class="fa fa-envelope-o me-3" aria-hidden="true"></i>
+                                                Iniciar Sesión con <b>e-mail</b>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="linea"></div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-12 mb-3">
+                                    <h3 class="title">Ó</h3>
+                                </div>
+                                <div class="col-12 mb-3 d-grid gap-2">
+                                    <button type="button" class="fb btn">
+                                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                                        Iniciar Sesion con <b>Facebook</b>
+                                    </button>
+                                </div>
+                                <div class="col-12 d-grid gap-2">
+                                    <button type="button" class="gg btn">
+                                        <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+                                        Iniciar Sesion con <b>Google</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Crear Cuenta -->
+                    <div class="col py-5 px-5 gost" id="dCrear"  style="height: 80%;">
+                        <div class="container-form">
+                            <div class="row">
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label title" for="nombre">NOMBRE</label>
+                                            <input type="text" id="nombreR" class="form-control" placeholder="Escribe tu e-mail" required>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label title" for="email">CORREO ELECTRÓNICO</label>
+                                            <input type="email" id="emailR" class="form-control" placeholder="Escribe tu e-mail" required>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label title" for="pass">CONTRASEÑA</label>
+                                            <input type="password" id="passR" class="form-control" placeholder="Elige tu contrasña" required>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label title" for="pass">REPITE LA CONTRASEÑA</label>
+                                            <input type="password" id="passRR" class="form-control" placeholder="Repite tu contraseña" required>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 text-center">
+                                        <div class="col">
+                                            <h6 class="title" style="font-weight: bold;">Selecciona tu mascota y obtén un 5% de descuento</h6>
+                                            <p>Suscríbete a ofertas personalizadas para ti</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-4">
+                                            <img src="../img/dog-icon.svg" class="img-svg-mascota">
+                                            <input type="checkbox" id="perro" value="perro">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="../img/cat-icon.svg" class="img-svg-mascota">
+                                            <input type="checkbox" id="gato" value="gato">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="../img/rat-icon.svg" class="img-svg-mascota">
+                                            <input type="checkbox" id="roedor" value="roedor">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col d-grid gap-2">
+                                            <button type="button" class="btn btn-primary py-3" id="regist">
+                                                <i class="fa fa-envelope-o me-3" aria-hidden="true"></i>
+                                                Registrame
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+[
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete1.jpg",
+        "nombre": "Trixie - Pelota americano",
+        "precio": "$93.11",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete2.jpg",
+        "nombre": "Trixie - Muñeco masticable",
+        "precio": "$60.29",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete3.jpg",
+        "nombre": "Trixie - Muñeco masticable",
+        "precio": "$35.06",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete4.jpg",
+        "nombre": "Trixie - Peluche de aro",
+        "precio": "$87.23",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete5.jpg",
+        "nombre": "Trixie - Flip Board",
+        "precio": "$272.71",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete6.jpg",
+        "nombre": "Trixie - Platillo de plastico",
+        "precio": "$158.61",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete7.jpg",
+        "nombre": "Trixie - Pelota",
+        "precio": "$38.42",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete8.jpg",
+        "nombre": "Trixie - Hueso de hule masticable",
+        "precio": "$156.89",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete9.jpg",
+        "nombre": "Trixie - Muñeco masticable",
+        "precio": "$96.23",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "izxaY",
+        "categoria": "juguetes",
+        "especie": "perro",
+        "imagen": "../../img/JUGUETE PERRO/juguete10.jpg",
+        "nombre": "Trixie - Pelota de tenis",
+        "precio": "$35.06",
+        "opciones": "1 pz"
+    }
+]

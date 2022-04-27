@@ -1,0 +1,74 @@
+[
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene1.jpg",
+        "nombre": "Trixie - Bandeja higienica",
+        "precio": "$342.09",
+        "oferta": "$339.00",
+        "descuento": "- $3.09",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene2.jpg",
+        "nombre": "Men For San - Shampoo",
+        "precio": "$150.33",
+        "oferta": "$148.00",
+        "descuento": "- $2.33",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene3.jpg",
+        "nombre": "Trixie - Cepillo plastico",
+        "precio": "$196.00",
+        "oferta": "$190.12",
+        "descuento": "- $5.58",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene4.jpg",
+        "nombre": "Novopet - Shampoo",
+        "precio": "$150.33",
+        "oferta": "$148.00",
+        "descuento": "- $2.33",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene5.jpg",
+        "nombre": "Trixie - Ratonera",
+        "precio": "$215.48",
+        "oferta": "$210.99",
+        "descuento": "- $4.49",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene6.jpg",
+        "nombre": "Trixie - Pala WC",
+        "precio": "$150.33",
+        "oferta": "$148.00",
+        "descuento": "- $2.33",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene7.jpg",
+        "nombre": "Trixie - Spray universal anti garrapatas",
+        "precio": "$124.54",
+        "oferta": "$120.80",
+        "descuento": "- $3.74",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene8.jpg",
+        "nombre": "Hami Form - Shampoo",
+        "precio": "$66.57",
+        "oferta": "$64.57",
+        "descuento": "- $2.00",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/HIGIENE_ROEDORES/higiene9.jpeg",
+        "nombre": "Trixie - Cepillo",
+        "precio": "$530.50",
+        "oferta": "$514.59",
+        "descuento": "- $15.92",
+        "opciones": "1 pz"
+    }
+]

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --color-base:   #1BA8F0;
+    --color-red:    #C81E27;
+    --color-azul:   #2FB09A;
+    --color-black:  #000000;
+    --color-gris:   #616161;
+    --color-white:  #FFFFFF;
+    --color-donacion: #F7F8F7;
+}
+
+/* ============================================= */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: var(--color-white);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    background-color: var(--color-base);
+}
+
+.nav-link{
+    color: var(--color-white);
+}
+
+.nav-link:hover{
+    color: #000000;
+}
+
+.separador-link{
+    margin-left: 1em;
+    border-left: 2px var(--color-black) solid;
+    padding-left: 1em;
+}
+
+.relleno-rojo, .resaltado-rojo-btn{
+    background-color: var(--color-red);
+}
+
+.relleno-azul{
+    background-color: var(--color-base);
+}
+
+.resaltado-rojo-btn{
+    padding: 4px;
+    border: 2px var(--color-black) solid;
+}
+
+.relleno-verde{
+    background-color: var(--color-azul);
+}
+
+.relleno-azul, .relleno-rojo, .relleno-verde{
+    padding: 1px;
+    margin-right: 2em;
+    margin-left: 2em;
+
+    border: 2px var(--color-black) solid;
+    color: var(--color-white);
+}
+
+.separador-oferta{
+    margin-top: 1em;
+}
+
+.desc-titulo{
+    color: var(--color-base);
+    font-weight: bold;
+}
+
+.desc-desc{
+    font-weight: bold;
+}
+
+.title{
+    color: var(--color-base);
+}
+.img-svg{
+    width: 25%;
+}
+.img-svg-mps{
+    width: 50px;
+    margin-right: 15px;
+}
+
+.fa-question-circle-o{
+    color: var(--color-base);
+}
+.question, .fa-circle-o{
+    color: var(--color-gris);
+}
+
+.linear{
+    border-bottom: 2px #DEE2E6 solid;
+}
+
+.fa-times{
+    cursor: pointer;
+}
+
+.content{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.donacion{
+    background-color: var(--color-donacion);
+}
+
+.comboBX{
+    width: 100%;
+    color: var(--color-base);
+}
+
+#totalPago{
+    color: var(--color-base);
+    font-weight: bold;
+}
+
+.btn-info{
+    color: var(--color-white);
+    font-weight: bold;
+    background-color: #1BA8F0;
+}
+
+.btn-danger{
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.img-svg-envio{
+    width: 10%;
+    display: flex;
+    float: left;
+    margin-right: 1em;
+}
+
+.funciona:hover{
+    color: var(--color-base);
+    cursor: pointer;
+}
+
+.sub-text{
+    color: var(--color-gris);
+    font-size: 12px;
+}
+.ver-mas{
+    font-style: italic;
+}
+
+.ver-mas:hover, .privacidad:hover{
+    cursor: pointer;
+    color: #000000;
+}
+
+#pagoFinal{
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.cuenta{
+    background-color: var(--color-donacion);
+}
+
+.letra-chiquita{
+    color: var(--color-gris);
+    font-size: 12px;
+}
+
+.cambiar{
+    color: black;
+    text-decoration: none;
+}
+
+.cambiar:hover{
+    color: var(--color-base);
+}
+
+.fa-facebook, .fa-google{
+    margin-right: 15px;
+}
+
+.fb{
+    background-color: #3B5999;
+}
+
+.gg{
+    background-color: #DB3235;
+}
+
+.fb, .gg{
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso1.jpg",
+        "nombre": "Trixie - Cobija patitas",
+        "precio": "$183.66",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso2.jpg",
+        "nombre": "Trixie - Tapete Esponja",
+        "precio": "$183.66",
+        "opciones": "1 pz - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso3.jpg",
+        "nombre": "Trixie - Casa de Tela",
+        "precio": "$1012.58",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso4.jpg",
+        "nombre": "Trixie - Peluche de perro Grande",
+        "precio": "$580.69",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso5.jpg",
+        "nombre": "Trixie - Cama sencilla para perro Mediano",
+        "precio": "$364.91",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso6.jpg",
+        "nombre": "Trixie - Cama para perro",
+        "precio": "$673.89",
+        "opciones": "1 pz - Tamaños: Chico, Mediano, Grande"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso7.jpg",
+        "nombre": "Trixie - Cama para perro Chico",
+        "precio": "$480.63",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso8.jpg",
+        "nombre": "Trixie - Cama para perro Mediano",
+        "precio": "$535.15",
+        "opciones": "1 pz  - Color: Rojo, Azul, Gris"
+    },
+    {
+        "imagen": "../../img/DESCANSO PERRO/descanso9.jpg",
+        "nombre": "Trixie - Cama para perro Chico",
+        "precio": "$1210.20",
+        "opciones": "1 pz"
+    }
+]

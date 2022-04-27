@@ -1,0 +1,62 @@
+[
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA1.jpg",
+        "nombre": "YAGU - Collar pechera",
+        "precio": "$120.39",
+        "opciones": "1 pz - Tamaño: Chico"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA2.jpg",
+        "nombre": "YAGU - Collar moño",
+        "precio": "$80.00",
+        "opciones": "1 pz - Tamaño: Chico, Mediano"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA3.jpg",
+        "nombre": "YAGU - Gorro",
+        "precio": "$190.23",
+        "opciones": "1 pz - Tamaño: Chico, Mediano, Grande"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA4.jpg",
+        "nombre": "YAGU - Collar bufanda",
+        "precio": "$100.25",
+        "opciones": "1 pz - Tamaño: Chico, Mediano"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA5.jpg",
+        "nombre": "YAGU - Traje navideño",
+        "precio": "$721.38",
+        "opciones": "1 pz - Tamaño: Chico"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA6.jpg",
+        "nombre": "YAGU - Traje para frio",
+        "precio": "$213.92",
+        "opciones": "1 pz - Tamaño: Chico, Mediano"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA7.jpg",
+        "nombre": "YAGU - Gorro",
+        "precio": "$200.53",
+        "opciones": "1 pz - Tamaño: Chico"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA8.jpg",
+        "nombre": "YAGU - Kit de Accesorios",
+        "precio": "$2800.36",
+        "opciones": "1 kit"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA9.jpg",
+        "nombre": "YAGU - Calzado",
+        "precio": "$280.54",
+        "opciones": "1 pz - Tamaño: Chico, Mediano, Grande"
+    },
+    {
+        "imagen": "../../img/ROPA PERRO/ROPA10.jpg",
+        "nombre": "YAGU - Gorro monstruo",
+        "precio": "$256.12",
+        "opciones": "1 pz - Tamaño: Chico, Mediano, Grande"
+    }
+]

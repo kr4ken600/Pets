@@ -1,0 +1,101 @@
+[
+    {
+        "identificador": "Xv3hZ",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene2.jpg",
+        "nombre": "Trixie - Shampoo pelo largo",
+        "precio": "$154.56",
+        "oferta": "$149.92",
+        "descuento": "- $4.64",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "mqpFw",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene3.jpg",
+        "nombre": "Trixie - Guante de Masaje",
+        "precio": "$170.02",
+        "oferta": "$163.45",
+        "descuento": "- $6.57",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "zVuNS",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene4.jpg",
+        "nombre": "Men For San - Crema suavizante",
+        "precio": "$290.52",
+        "oferta": "$281.80",
+        "descuento": "- $8.71",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "xMfup",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene5.jpg",
+        "nombre": "Trixie - Langhaar-Shampoo",
+        "precio": "$680.76",
+        "oferta": "$675.28",
+        "descuento": "- $5.48",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "6cm7Q",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene6.jpg",
+        "nombre": "Trixie - Peine",
+        "precio": "$96.50",
+        "oferta": "$90.79",
+        "descuento": "- $5.71",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "VmxE9",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene7.jpeg",
+        "nombre": "Trixie - Pala WC",
+        "precio": "$150.33",
+        "oferta": "$148.00",
+        "descuento": "- $2.33",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "BL2gx",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene8.jpg",
+        "nombre": "Stanvet - OptiCan",
+        "precio": "$101.55",
+        "oferta": "$98.50",
+        "descuento": "- $3.05",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "wRLLX",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene9.jpg",
+        "nombre": "Stanvet - DentiVet",
+        "precio": "$101.55",
+        "oferta": "$98.50",
+        "descuento": "- $3.05",
+        "opciones": "1 pz"
+    },
+    {
+        "identificador": "KVcQk",
+        "categoria": "higiene",
+        "especie":"gato",
+        "imagen": "../../img/HIGIENE_GATOS/higiene10.jpg",
+        "nombre": "Trixie - Cortauñas",
+        "precio": "$87.99",
+        "oferta": "$65.99",
+        "descuento": "- $2.00",
+        "opciones": "1 pz"
+    }
+]

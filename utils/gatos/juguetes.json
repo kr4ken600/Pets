@@ -1,0 +1,56 @@
+[
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete1.png",
+        "nombre": "Trixie - Rascador para gatos con pelota",
+        "precio": "$196.89",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete2.jpg",
+        "nombre": "Trixie - Rascador para gatos",
+        "precio": "$150.35",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete3.jpg",
+        "nombre": "Trixie - Peluche ardilla",
+        "precio": "$99.27",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete4.jpg",
+        "nombre": "Trixie - kitten kickeroo",
+        "precio": "$1107.78",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete5.jpg",
+        "nombre": "Trixie - Peluche raton",
+        "precio": "$99.27",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete7.jpg",
+        "nombre": "Trixie - Vara de juego con raton",
+        "precio": "$136.70",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete8.jpg",
+        "nombre": "Trixie - Pelota de esponja",
+        "precio": "$93.11",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete9.jpg",
+        "nombre": "Trixie - Solitaire",
+        "precio": "$280.65",
+        "opciones": "1 pz"
+    },
+    {
+        "imagen": "../../img/JUGUETES_GATOS/juguete10.jpg",
+        "nombre": "Trixie - Tunel expansible",
+        "precio": "$399.19",
+        "opciones": "1 pz"
+    }
+]
