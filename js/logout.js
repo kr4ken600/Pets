@@ -1,11 +1,13 @@
 //Variables Globales
 var estatus = 0;
-var token = document.cookie;
+var token = localStorage.getItem("Authorization");
 
 //Comprobacion de Token (Sesion)
-if(token.split('=')[0] === 'token'){
-    location.href = 'personal.html';
-} 
+if(token != null){
+    if(token.split(" ")[1].length > 0 ){
+        location.href = 'personal.html';
+    } 
+}
 
 //Botones de cabecera
 ///// INICIAR SESION /////
@@ -48,7 +50,7 @@ document.getElementById("initS").onclick = () => {
         xhr.onreadystatechange = function (){
             if(this.readyState === 4 && this.status === 200){
                 const token = JSON.parse(this.response);
-                document.cookie = `token=${token.token}`;
+                localStorage.setItem("Authorization", `Bearer ${token.token}`);
                 location.reload();
             } else {
 
@@ -63,8 +65,6 @@ document.getElementById("initS").onclick = () => {
         xhr.setRequestHeader("Content-type", "application/json");
         xhr.send(userData);        
     } else alert("Todos los campos son requeridos");
-
-    // document.cookie = `token= ${Math.random().toString(36).substr(2)}`;
 }
 
 // Arreglo para guardar a las mascotas

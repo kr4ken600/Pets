@@ -79,7 +79,19 @@
     <!-- Scripts -->
     <script src="../js/bootstrap/bootstrap.min.js"></script>
     <script>
-        if(document.cookie == '') location.href = 'logout.html';
+        if(localStorage.getItem("Authorization") === null) location.href = 'logout.html';
+
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "http://localhost:9000/api/users/personal");
+        xhr.onreadystatechange = function (){
+            if(this.readyState === 4 && this.status === 200){
+                const data = JSON.parse(this.response);
+                console.log(data);
+            } else console.log(this.response);
+        }
+        xhr.setRequestHeader("Authorization", localStorage.getItem("Authorization"));
+        xhr.send();
     </script>
 </body>
 </html>
