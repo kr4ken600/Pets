@@ -61,7 +61,7 @@
                         </div>
                         <div class="col-4">
                             <img src="../../img/usuario.png" width="40%">
-                            <h6><a class="nav-link" href="../../user/logout.html">Usuario</a></h6>
+                            <h6><a class="nav-link" href="../../user/logout.html" id="personal"></a></h6>
                         </div>
                         <div class="col-4">
                             <img src="../../img/carrito.png" width="40%">
@@ -180,5 +180,8 @@
     <!-- Scripts -->
     <script src="../../js/bootstrap/bootstrap.min.js"></script>
     <script src="../../js/roedores/descanso.js"></script>
+    <script>
+        document.getElementById("personal").innerText = localStorage.getItem("userName") ? localStorage.getItem("userName") : "Usuario";
+    </script>
 </body>
 </html>

@@ -42,12 +42,11 @@ router.post('/users/login', (req, res)=>{
 });
 
 router.get('/users/personal', middleware.ensureAuthenticated, (req, res)=>{
-  //const {identificador} = req.identificador;
-  console.log(req.body);
-  // usersSchema
-  //   .findOne({identificador:id})
-  //   .then((data)=>res.json(data))
-  //   .catch((err)=>res.json({message:err}));
+  const identificador = req.identificador;
+  usersSchema
+    .findOne({identificador:identificador})
+    .then((data)=>res.json(data))
+    .catch((err)=>res.json({message:err}));
 });
 
 

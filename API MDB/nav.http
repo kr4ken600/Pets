@@ -1,0 +1,55 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "identificador": "L7HU5hReQP",
+  "typeUser": "client",
+  "userName": "Yonatan",
+  "password": "pass123",
+  "email": "yon@gmail.com",
+  "mascota": ["perro", "gato", "roedor"]
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email":"zam@gmail.com",
+  "password": "asd"
+}
+
+###
+GET http://localhost:9000/api/users/L7HU5hReQP HTTP/1.1
+
+###
+POST http://localhost:9000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "identificador": "itA5y",
+        "categoria": "transporte",
+        "especie": "roedor",
+        "imagen": "../../img/TRANSPORTE_ROEDORES/tranporte10.jpg",
+        "nombre": "Witte Molen - Transportadora Pequeño Ligero",
+        "precio": "$129.99",
+        "oferta": "",
+        "descuento": "",
+        "opciones": "1 pz"
+}
+
+###
+GET http://localhost:9000/api/products HTTP/1.1
+
+###
+GET http://localhost:9000/api/products/perro/ropa HTTP/1.1
+
+###
+GET http://localhost:9000/api/products/roedor/juguetes HTTP/1.1
+
+###
+GET http://localhost:9000/api/products/f8MCx HTTP/1.1

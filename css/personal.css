@@ -1,0 +1,22 @@
+:root{
+    --color-base:   #1BA8F0;
+    --color-red:    #C81E27;
+    --color-azul:   #2FB09A;
+    --color-black:  #000000;
+    --color-white:  #FFFFFF;
+    --color-bordes: #DDDDDD;
+    --color-gost:   #F1F1F1;
+}
+
+li{
+    list-style: none;
+}
+
+.btn{
+    background-color: var(--color-base);
+    color: var(--color-white);
+}
+
+.ghost{
+    display: none;
+}

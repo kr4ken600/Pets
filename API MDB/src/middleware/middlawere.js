@@ -16,6 +16,7 @@ exports.ensureAuthenticated = (req, res, next) => {
     if(payload.exp <= moment().unix()){
       return res.status(401).send({ message: "El token ha expirado" });
     }
-  
+    
+    req.identificador = payload.identificador;
     next();
   }
