@@ -63,3 +63,11 @@ a{
 a:hover{
     color: var(--color-azul);
 }
+
+.cantidad-selector{
+    max-width: 85%;
+}
+
+.cantidad-selector:focus{
+    border-color: var(--color-base);
+}

@@ -119,7 +119,7 @@ document.getElementById("regist").onclick = () => {
             const xhr = new XMLHttpRequest();
     
             var  data = JSON.stringify({
-                identificador: generateRandomString(10),
+                identificador: generateRandomIdentificador(10),
                 typeUser: "client",
                 userName: nombre,
                 password: pass,
@@ -143,7 +143,7 @@ document.getElementById("regist").onclick = () => {
 }
 
 //Fucion para crear el identificador de usuario aleatorio (N caracteres)
-const  generateRandomString = (num) => {
+const  generateRandomIdentificador = (num) => {
     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result1= '';
     const charactersLength = characters.length;

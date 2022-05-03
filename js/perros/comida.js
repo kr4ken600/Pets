@@ -17,13 +17,14 @@ fetch("http://localhost:9000/api/products/perro/comida")
                 data[i].precio,
                 data[i].oferta,
                 data[i].descuento,
-                data[i].opciones);
+                data[i].opciones,
+                data[i].identificador);
         }
     }
 );
 
 //Funcion para crear la miniatura
-function crearMiniatura(div, img, nombre, precio, oferta, descuento, opciones) {
+function crearMiniatura(div, img, nombre, precio, oferta, descuento, opciones, id) {
 
     //Obtenemos el div que se va a ocupar como contenedor
     var parte1 = document.getElementById(div);
@@ -58,11 +59,64 @@ function crearMiniatura(div, img, nombre, precio, oferta, descuento, opciones) {
     pOpciones.className = "opc-producto";
     pOpciones.innerHTML = `<b>Opciones: </b> <span>${opciones}</span>`;
 
+    const btnCarrito = document.createElement('button');
+    btnCarrito.disabled = true;
+    btnCarrito.className = "btn btn-success";
+    btnCarrito.innerHTML = '<i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar al carrito';
+    btnCarrito.onclick = () => {
+        const xhr = new XMLHttpRequest();
+        
+        const data = JSON.stringify({
+            identificador: generateRandomIdentificador(5),
+            id_cliente: localStorage.getItem("id"),
+            id_producto: id,
+            cantidad: document.getElementById(id).value,
+            precio: `${(document.getElementById(id).value * oferta.split("$")[1])}`,
+        });
+
+        xhr.open("POST", "http://localhost:9000/api/car" ,true);
+        xhr.onreadystatechange = function () {
+            if(this.readyState === 4 && this.status === 200){
+                alert("Producto agregado al carrito");
+            } 
+        }
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.send(data);
+    }
+
+    const cantidad = document.createElement('input');
+    cantidad.className = "mb-2 cantidad-selector"
+    cantidad.type = "number";
+    cantidad.id = id;
+    cantidad.step = "0";
+    cantidad.min = "0";
+    cantidad.value = 0;
+    cantidad.onchange = (event) => {
+        var data = event.target.value;
+        if(data > 0) btnCarrito.disabled = false;
+        else btnCarrito.disabled = true;
+    }
+
+   
+
     //Agregamos todo al div contenedor de informacion
     div.appendChild(imgs);
     div.appendChild(pNombre);
     div.appendChild(pPrecio);
     div.appendChild(pOferta);
     div.appendChild(pOpciones);
+    div.appendChild(cantidad);
+    div.appendChild(btnCarrito);
+}
+
+const  generateRandomIdentificador = (num) => {
+    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result1= '';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < num; i++ ) {
+        result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result1;
 }
 

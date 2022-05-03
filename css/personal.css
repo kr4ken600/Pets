@@ -12,11 +12,31 @@ li{
     list-style: none;
 }
 
-.btn{
+li>.btn{
     background-color: var(--color-base);
     color: var(--color-white);
 }
 
+.btn-danger{
+    font-weight: normal;
+}
+
 .ghost{
     display: none;
+}
+
+.border-punteado{
+    border: var(--color-black) 2px dotted;
+    border-radius: 5px;
+}
+
+.message{
+    display: none;
+}
+
+.messageView{
+    display: block;
+    color: var(--color-red);
+    font-size: 12px;
+    font-weight: bold;
 }

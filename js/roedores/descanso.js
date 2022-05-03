@@ -14,12 +14,13 @@ fetch("http://localhost:9000/api/products/roedor/descanso")
                 data[i].imagen,
                 data[i].nombre,
                 data[i].precio,
-                data[i].opciones);
+                data[i].opciones,
+                data[i].identificador);
         }
     }
 );
 
-function crearMiniatura(div, img, nombre, precio, opciones) {
+function crearMiniatura(div, img, nombre, precio, opciones, id) {
     var parte1 = document.getElementById(div);
     
     var div = document.createElement('div');
@@ -42,8 +43,16 @@ function crearMiniatura(div, img, nombre, precio, opciones) {
     pOpciones.className = "opc-producto";
     pOpciones.innerHTML = `<b>Opciones: </b> <span>${opciones}</span>`;
 
+    const btnCarrito = document.createElement('button');
+    btnCarrito.className = "btn btn-success";
+    btnCarrito.innerHTML = '<i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar al carrito';
+    btnCarrito.onclick = () => {
+        alert(`El ID es: ${id}`);
+    }
+
     div.appendChild(imgs);
     div.appendChild(pNombre);
     div.appendChild(pPrecio);
     div.appendChild(pOpciones);
+    div.appendChild(btnCarrito);
 }

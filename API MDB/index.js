@@ -5,6 +5,8 @@ const cors = require('cors');
 const {config} = require("./src/config");
 const userRoute = require("./src/routes/users.route");
 const productRoute = require("./src/routes/productos.route");
+const addressRoute = require("./src/routes/address.route");
+const carsRoute = require("./src/routes/cars.route");
 
 const app = express();
 const port = process.env.PORT || config.INIT_PORT;
@@ -24,6 +26,8 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', userRoute);
 app.use('/api', productRoute);
+app.use('/api', addressRoute);
+app.use('/api', carsRoute);
 
 //Rutas
 app.get("/", (req,res) => {

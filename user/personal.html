@@ -86,11 +86,90 @@
             <div class="col-10">
                 <div class="row" id="datosPR">
                     <div class="col-12 px-5">
-                        
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label class="form-label title" for="email">CORREO ELECTRÓNICO</label>
+                                    <input type="email" id="email" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <label class="form-label title" for="userName">NOMBRE DE USUARIO</label>
+                                    <input type="text" id="userName" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label class="form-label title" for="mascota">MASCOTAS</label>
+                                    <input type="text" id="mascota" class="form-control">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="row px-5 ghost" id="direccionesR">
-                    <div class="col-12">Hola 2</div>
+                    <div class="col-12">
+                        <div class="row"  id="direccionesCard">
+                            <h4 class="title mb-5">Direcciones</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODAL DIRECCIONES -->
+                <div class="modal fade" id="modalAddress" tabindex="-1" aria-labelledby="modalAddress" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title title" id="modalAddressLabel">Nueva Direccion</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form>
+                                        <div class="row mb-3">
+                                          <div class="col">
+                                            <label for="recipient-ciudad" class="col-form-label">Ciudad</label>
+                                            <input type="text" class="form-control" id="recipient-ciudad">
+                                          </div>
+                                          <div class="col">
+                                            <label for="recipient-colonia" class="col-form-label">Colonia</label>
+                                            <input type="text" class="form-control" id="recipient-colonia">
+                                          </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                              <label for="recipient-calle" class="col-form-label">Calle</label>
+                                              <input type="text" class="form-control" id="recipient-calle">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                                <label for="recipient-codPostal" class="col-form-label">Codigo Postal</label>
+                                                <input type="text" class="form-control" id="recipient-codPostal">
+                                            </div>
+                                            <div class="col">
+                                                <label for="recipient-numExterior" class="col-form-label">Numero Exterior</label>
+                                                <input type="text" class="form-control" id="recipient-numExterior">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                                <label for="recipient-numTelefono" class="col-form-label">Numero Telefonico</label>
+                                                <input type="tel" class="form-control" id="recipient-numTelefono">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <p class="message" id="messageError">*Todos los campos son necesarios</p>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12 d-grid gap-2">
+                                                <button type="button" class="btn btn-primary" id="addDirecctionBtn">Aceptar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,12 +177,5 @@
     <!-- Scripts -->
     <script src="../js/bootstrap/bootstrap.min.js"></script>
     <script src="../js/personal.js"></script>
-    <script>
-        document.getElementById("cerrarSesion").onclick = () => {
-            localStorage.removeItem("userName");
-            localStorage.removeItem("Authorization");
-            location.reload();
-        }
-    </script>
 </body>
 </html>
