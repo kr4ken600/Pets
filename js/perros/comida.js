@@ -64,24 +64,47 @@ function crearMiniatura(div, img, nombre, precio, oferta, descuento, opciones, i
     btnCarrito.className = "btn btn-success";
     btnCarrito.innerHTML = '<i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar al carrito';
     btnCarrito.onclick = () => {
-        const xhr = new XMLHttpRequest();
-        
-        const data = JSON.stringify({
-            identificador: generateRandomIdentificador(5),
-            id_cliente: localStorage.getItem("id"),
-            id_producto: id,
-            cantidad: document.getElementById(id).value,
-            precio: `${(document.getElementById(id).value * oferta.split("$")[1])}`,
-        });
+        if(localStorage.getItem("id")){
+            const xhr = new XMLHttpRequest();
 
-        xhr.open("POST", "http://localhost:9000/api/car" ,true);
-        xhr.onreadystatechange = function () {
-            if(this.readyState === 4 && this.status === 200){
-                alert("Producto agregado al carrito");
-            } 
+            const data = JSON.stringify({
+                identificador: generateRandomIdentificador(5),
+                id_cliente: localStorage.getItem("id"),
+                id_producto: id,
+                cantidad: document.getElementById(id).value,
+                precio: `${(document.getElementById(id).value * oferta.split("$")[1])}`,
+            });
+
+            xhr.open("POST", "http://localhost:9000/api/car" ,true);
+            xhr.onreadystatechange = function () {
+                if(this.readyState === 4 && this.status === 200){
+                    alert("Producto agregado al carrito");
+                } 
+            }
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.send(data);   
+        } else {
+            var carrito = localStorage.getItem("carritoList");
+            if (carrito !== null) {
+                carrito.push(JSON.stringify({
+                    identificador: generateRandomIdentificador(5),
+                    id_producto: id,
+                    cantidad: document.getElementById(id).value,
+                    precio: `${(document.getElementById(id).value * oferta.split("$")[1])}`
+                }))
+                localStorage.setItem(carrito);
+            } else{
+                var data = [JSON.stringify({
+                    identificador: generateRandomIdentificador(5),
+                    id_producto: id,
+                    cantidad: document.getElementById(id).value,
+                    precio: `${(document.getElementById(id).value * oferta.split("$")[1])}`
+                })]
+                console.log(data);
+                //localStorage.setItem("carrito", data);
+            }
+            console.log(localStorage.getItem("carrito"));
         }
-        xhr.setRequestHeader("Content-type", "application/json");
-        xhr.send(data);
     }
 
     const cantidad = document.createElement('input');
