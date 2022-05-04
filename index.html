@@ -136,7 +136,20 @@
     <!-- Scripts -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script>
-        document.getElementById("personal").innerText = localStorage.getItem("userName") ? localStorage.getItem("userName") : "Usuario";
+        const user = localStorage.getItem("userName");
+        document.getElementById("personal").innerText = user ? user : "Usuario";
+
+        if(!user && !localStorage.getItem("id_invitado")){
+            const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
+                .then(FingerprintJS => FingerprintJS.load());
+
+            fpPromise
+                .then(fp => fp.get())
+                .then(result => {
+                    const visitorId = result.visitorId
+                    localStorage.setItem("id_invitado", visitorId.substring(0,10));
+                });
+        } else localStorage.removeItem("id_invitado");
     </script>
 </body>
 </html>

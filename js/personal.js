@@ -12,6 +12,7 @@ xhr.onreadystatechange = function (){
         localStorage.setItem("userName", data.userName);
         localStorage.setItem("mascota", data.mascota);
         localStorage.setItem("email", data.email);
+        localStorage.removeItem("id_invitado");
 
         setData();
     }
@@ -189,7 +190,18 @@ function limipiarDiv() {
 
 document.getElementById("cerrarSesion").onclick = () => {
     localStorage.clear();
-    location.reload();
+
+    const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
+        .then(FingerprintJS => FingerprintJS.load());
+
+    fpPromise
+        .then(fp => fp.get())
+        .then(result => {
+            const visitorId = result.visitorId
+            console.log(visitorId);
+            localStorage.setItem("id_invitado", visitorId.substring(0,10));
+            location.reload();
+        });
 }
 
 document.getElementById("addDirecctionBtn").onclick = () => {
