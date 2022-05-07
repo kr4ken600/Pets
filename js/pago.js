@@ -116,6 +116,9 @@ function añadirProducto(clas, imgn, marca, nombre, peso, cantidad, precioUnidad
 
     //Creamos el precio
     var h6 = document.createElement("h6");
+    total = total.split(".")[1].length > 2 
+        ? total.substring(0, total.indexOf(".") + 3) 
+        : total;
     h6.innerText = `\$${total}`;
     h6.style.fontWeight = "bold";
 

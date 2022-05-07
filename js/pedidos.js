@@ -122,6 +122,9 @@ function añadirProducto(clas, imgn, marca, nombre, peso, cantidad, precioUnidad
 
     //Creamos el precio
     var h4 = document.createElement("h4");
+    total = total.split(".")[1].length > 2 
+        ? total.substring(0, total.indexOf(".") + 3) 
+        : total;
     h4.innerText = `\$${total}`;
 
     //Agregamos el precio a su columna

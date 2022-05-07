@@ -47,12 +47,67 @@ function crearMiniatura(div, img, nombre, precio, opciones, id) {
     btnCarrito.className = "btn btn-success";
     btnCarrito.innerHTML = '<i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar al carrito';
     btnCarrito.onclick = () => {
-        alert(`El ID es: ${id}`);
+        const xhr = new XMLHttpRequest();
+        let data = null;
+        if(localStorage.getItem("id")){
+            data = JSON.stringify({
+                identificador: generateRandomIdentificador(5),
+                id_cliente: localStorage.getItem("id"),
+                id_producto: id,
+                cantidad: document.getElementById(id).value,
+                precio: `${(document.getElementById(id).value * precio.split("$")[1])}`,
+            });
+        } else {
+            data = JSON.stringify({
+                identificador: generateRandomIdentificador(5),
+                id_cliente: localStorage.getItem("id_invitado"),
+                id_producto: id,
+                cantidad: document.getElementById(id).value,
+                precio: `${(document.getElementById(id).value * precio.split("$")[1])}`,
+            });
+        }
+        
+        xhr.open("POST", "http://localhost:9000/api/car" ,true);
+        xhr.onreadystatechange = function () {
+            if(this.readyState === 4 && this.status === 200){
+                alert("Producto agregado al carrito");
+                document.getElementById(id).selectedIndex = 0;
+                btnCarrito.disabled = true;
+            } 
+        }
+        xhr.setRequestHeader("Content-type", "application/json");
+        xhr.send(data);
+    }
+
+    const cantidad = document.createElement('input');
+    cantidad.className = "mb-2 cantidad-selector"
+    cantidad.type = "number";
+    cantidad.id = id;
+    cantidad.step = "0";
+    cantidad.min = "0";
+    cantidad.value = 0;
+    cantidad.onchange = (event) => {
+        var data = event.target.value;
+        if(data > 0) btnCarrito.disabled = false;
+        else btnCarrito.disabled = true;
     }
 
     div.appendChild(imgs);
     div.appendChild(pNombre);
     div.appendChild(pPrecio);
     div.appendChild(pOpciones);
+    div.appendChild(cantidad);
+    div.appendChild(cantidad);
     div.appendChild(btnCarrito);
+}
+
+const  generateRandomIdentificador = (num) => {
+    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result1= '';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < num; i++ ) {
+        result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result1;
 }
