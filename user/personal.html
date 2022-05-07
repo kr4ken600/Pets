@@ -177,5 +177,9 @@
     <!-- Scripts -->
     <script src="../js/bootstrap/bootstrap.min.js"></script>
     <script src="../js/personal.js"></script>
+    <script>
+        const user = localStorage.getItem("userName");
+        document.getElementById("personal").innerText = user ? user : "Usuario";
+    </script>
 </body>
 </html>

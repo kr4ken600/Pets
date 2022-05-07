@@ -1,0 +1,13 @@
+:root{
+    --color-base:   #1BA8F0;
+    --color-red:    #C81E27;
+    --color-azul:   #2FB09A;
+    --color-black:  #000000;
+    --color-gris:   #616161;
+    --color-white:  #FFFFFF;
+    --color-donacion: #F7F8F7;
+}
+
+.addres-select{
+    border: 1px solid var(--color-base);
+}

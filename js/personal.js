@@ -1,24 +1,49 @@
 if(localStorage.getItem("Authorization") === null) location.href = 'logout.html';
 
-const xhr = new XMLHttpRequest();
+if(localStorage.getItem("sesion") === null){
+    const xhr = new XMLHttpRequest();
 
-xhr.open("GET", "http://localhost:9000/api/users/personal");
-xhr.onreadystatechange = function (){
-    if(this.readyState === 4 && this.status === 200){
-        const data = JSON.parse(this.response);
-        document.getElementById("personal").innerText = data.userName;
-        localStorage.setItem("id", data.identificador);
-        localStorage.setItem("typeUser", data.typeUser);
-        localStorage.setItem("userName", data.userName);
-        localStorage.setItem("mascota", data.mascota);
-        localStorage.setItem("email", data.email);
-        localStorage.removeItem("id_invitado");
-
-        setData();
+    xhr.open("GET", "http://localhost:9000/api/users/personal");
+    xhr.onreadystatechange = function (){
+        if(this.readyState === 4 && this.status === 200){
+            const data = JSON.parse(this.response);
+            document.getElementById("personal").innerText = data.userName;
+            localStorage.setItem("id", data.identificador);
+            localStorage.setItem("typeUser", data.typeUser);
+            localStorage.setItem("userName", data.userName);
+            localStorage.setItem("mascota", data.mascota);
+            localStorage.setItem("email", data.email);
+            
+            fetch(`http://localhost:9000/api/car/${localStorage.getItem('id_invitado')}`)
+                .then(response => {
+                    return response.json();
+                })
+                .then((data) => {
+                    data.forEach(element => {
+                        const xh = new XMLHttpRequest();
+                        const update = JSON.stringify({
+                            id_cliente: localStorage.getItem('id')
+                        });
+                        xh.open('POST', `http://localhost:9000/api/car/update/${element.identificador}`);
+                        xh.onreadystatechange = function() {
+                            if(this.readyState === 4 && this.status === 200){
+                                const car = JSON.parse(this.response);
+                                console.log(car);
+                            }
+                        }
+                        xh.setRequestHeader("Content-type", "application/json");
+                        xh.send(update);
+                    });
+                })
+            
+            localStorage.removeItem("id_invitado");
+            localStorage.setItem("sesion", true);
+            setData();
+        }
     }
-}
-xhr.setRequestHeader("Authorization", localStorage.getItem("Authorization"));
-xhr.send();
+    xhr.setRequestHeader("Authorization", localStorage.getItem("Authorization"));
+    xhr.send();
+} else setData();
 
 function setData() {
     const email = document.getElementById("email");
@@ -46,6 +71,8 @@ document.getElementById("direcciones").onclick = () => {
     limipiarDiv();
     datosPR.classList.add("ghost");
     direcciones.classList.remove("ghost");
+
+    const xhr = new XMLHttpRequest();
 
     xhr.open("GET", `http://localhost:9000/api/address/${localStorage.getItem("id")}`);
     xhr.onreadystatechange = function (){
@@ -118,6 +145,8 @@ function getAddress(length, ciudad, colonia, calle, codPostal, numero, id) {
     btnDelete.className = "btn btn-danger";
     btnDelete.innerText = "Eliminar Dirección";
     btnDelete.onclick = () => {
+        const xhr = new XMLHttpRequest();
+
         xhr.open("DELETE", `http://localhost:9000/api/address/${id}`, true);
         xhr.onreadystatechange = function (){
             if(this.readyState === 4 && this.status === 200){
@@ -223,6 +252,8 @@ document.getElementById("addDirecctionBtn").onclick = () => {
             ciudad: ciudad,
             telefono: numTelefono
         });
+        const xhr = new XMLHttpRequest();
+
         xhr.open("POST", 'http://localhost:9000/api/address', true);
         xhr.onreadystatechange = function (){
             if(this.readyState === 4 && this.status === 200){

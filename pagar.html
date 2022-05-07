@@ -8,6 +8,7 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/064783c06b.js"></script>
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/pago.css" rel="stylesheet">
     <title>Pagar</title>
 </head>
 <body>
@@ -78,18 +79,17 @@
             <div class="col-8 me-4">
                 <!-- Encabezado -->
                 <div class="row text-center justify-content-between">
-                    <div class="col-6 border border-2 border-bottom-0 rounded-1 px-5 py-2">
-                        <h4>Comprar como invitado</h4>
+                    <div class="col-6 btn border border-2 border-bottom-0 rounded-1 px-5 py-2" id="invitado">
+                        Comprar como invitado
                     </div>
-                    <div class="col-6 border border-2 rounded-3 px-5 py-2 cuenta">
-                        <h4>
-                            <a href="mi-cuenta.html" class="cambiar">Ir a mi cuenta</a>
-                        </h4>
+                    <div class="col-6 btn border border-2 border-bottom-0 rounded-1 px-5 py-2 unselect" id="cuenta">
+                        Ir a mi cuenta
                     </div>
                 </div>
-                <!-- Primer Contenedor (Formulario de envio) -->
+                <!-- Primer Contenedor -->
                 <div class="row">
-                    <div class="col border border-2 border-top-0 rounded-3">
+                    <!-- (Formulario de envio) -->
+                    <div class="col border border-2 border-top-0 rounded-3" id="dInvitado">
                         <!-- Titulo -->
                         <div class="row mb-5 px-5 pt-5">
                             <h4 class="title">
@@ -101,46 +101,46 @@
                         <div class="row mb-3 px-5">
                             <div class="col">
                                 <div class="row mb-2">
-                                    <form>
+                                    <form name="addressDatos">
                                         <div class="row mb-2">
                                             <div class="col">
-                                                <input type="email" class="form-control" placeholder="Correo electronico">
+                                                <input name="inputs" type="email" id="emailI" class="form-control" placeholder="Correo electronico">
                                             </div>
                                         </div>
                                         <div class="row mb-2">
                                             <div class="col-6 pe-2">
-                                                <input type="text" class="form-control" placeholder="Nombre">
+                                                <input name="inputs" type="text" id="nombreI" class="form-control" placeholder="Nombre">
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control" placeholder="Apellidos">
+                                                <input name="inputs" type="text" id="apellidosI" class="form-control" placeholder="Apellidos">
                                             </div>
                                         </div>
                                         <div class="row mb-2">
                                             <div class="col-6 pe-2">
-                                                <input type="text" class="form-control" placeholder="Código postal">
+                                                <input name="inputs" type="text" id="codPostalI" class="form-control" placeholder="Código postal">
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control" placeholder="Ciudad">
+                                                <input name="inputs" type="text" id="ciudadI" class="form-control" placeholder="Ciudad">
                                             </div>
                                         </div>
                                         <div class="row mb-2">
                                             <div class="col">
-                                                <input type="text" class="form-control" placeholder="Calle, número, piso...">
+                                                <input name="inputs" type="text" id="calleI" class="form-control" placeholder="Calle, número, piso...">
                                             </div>
                                         </div>
                                         <div class="row mb-2">
                                             <div class="col">
-                                                <input type="text" class="form-control" placeholder="Provincia">
+                                                <input name="inputs" type="text" id="provinciaI" class="form-control" placeholder="Provincia">
                                             </div>
                                         </div>
                                         <div class="row mb-5">
                                             <div class="col-6 pe-2 mt-2">
                                                 <label class="form-label" for="tel"></label>
-                                                <input type="tel" id="tel" class="form-control" placeholder="Telefono">
+                                                <input name="inputs" type="tel" id="tel" class="form-control" placeholder="Telefono">
                                             </div>
                                             <div class="col-6">
                                                 <label class="form-label" for="pais">País</label>
-                                                <input type="text" id="pai" class="form-control" value="México">
+                                                <input name="inputs" type="text" id="pais" class="form-control" value="México">
                                             </div>
                                         </div>
                                     </form>
@@ -153,6 +153,69 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- (Cuenta) -->
+                    <div class="col border border-2 border-top-0 rounded-3 ghost" id="dCuenta">
+                        <div id="noSesion">
+                            <!-- Titulo -->
+                            <div class="row mb-5 px-5 pt-5 text-center">
+                                <h4 style="font-weight: bold;">
+                                    Acceso rapido
+                                </h4>
+                            </div>
+                            <!-- Faceboo y Google -->
+                            <div class="row mb-5 px-5">
+                                <div class="col">
+                                    <div class="row">
+                                        <!-- Facebook -->
+                                        <div class="col">
+                                            <div class="d-grid gap-2">
+                                                <button type="button" class="fb btn">
+                                                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                                                    Iniciar Sesion con <b>Facebook</b>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Google -->
+                                        <div class="col">
+                                            <div class="d-grid gap-2">
+                                                <button type="button" class="gg btn">
+                                                    <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+                                                    Iniciar Sesion con <b>Google</b>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Con email -->
+                            <div class="row mb-3 px-5">
+                                <div class="col border border-1 rounded-3 px-4 pt-5 pb-3">
+                                    <div class="row mb-4">
+                                        <h4 style="font-weight: bold;">
+                                            Iniciar sesión con <b>e-mail</b>
+                                        </h4>   
+                                    </div>
+                                    <!-- Formulario -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="d-grid gap-2">
+                                                <button type="button" class="btn btn-primary" id="dirLogin">
+                                                    <i class="fa fa-envelope-o me-3" aria-hidden="true"></i>
+                                                    <b>Iniciar sesión</b>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ghost mb-5 px-5 pt-5" id="sesion">
+                            <h4 class="title">
+                                <i class="fa fa-map-o" aria-hidden="true"></i>
+                                Tus Direcciones
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -183,56 +246,127 @@
                 <!-- Tercer contenedor (Metodos de pago) -->
                 <div class="row mt-5 mb-5">
                     <div class="col border border-2 rounded-3">
-                        <!-- Titulo -->
-                        <div class="row mb-3 px-5 pt-5">
-                            <h4 class="title">
-                                <i class="fa fa-credit-card" aria-hidden="true"></i>
-                                Métodos de pago
-                            </h4>
-                        </div>
-                        <!-- Metodo seleccionado -->
-                        <div class="row px-5 mb-3">
-                            <h5 style="font-weight: bold;">
-                                <i class="fa fa-check fa-1x title" aria-hidden="true"></i>
-                                Tarjeta de crédito
-                                <img src="img/credit.png">
-                            </h5>
-                        </div>
-                        <!-- Formulario de tarjeta -->
-                        <div class="row px-5 mb-3">
-                            <div class="col-6 border border-2 rounded-3 px-3 py-3">
-                                <form>
-                                    <div class="row mb-4">
-                                        <div class="col">
-                                            <label class="form-label" for="numero">Núero de tarjeta</label>
-                                            <input type="tel" id="numero" class="form-control" placeholder="8888 88888 88888 88888">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col">
-                                            <label class="form-label" for="nombre">Nombre del Titular</label>
-                                            <input type="tel" id="nombre" class="form-control" placeholder="Nombre y Apellidos">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6 me-2">
-                                            <label class="form-label" for="nombre">Valido hasta</label>
-                                            <input type="tel" id="nombre" class="form-control" placeholder="MM/AA">
-                                        </div>
-                                        <div class="col">
-                                            <label class="form-label" for="nombre">Codigo de Seguridad</label>
-                                            <input type="tel" id="nombre" class="form-control" placeholder="888">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- Letras chiquitas -->
-                        <div class="row px-5 mb-3">
+                        <div class="row">
                             <div class="col">
-                                <input type="checkbox" id="cboxTC" value="second_checkbox">
-                                <label for="cboxTC" class="checkout" ><h6 style="font-weight: bold;">Guardar esta tarjeta</h6></label>
-                                <p class="letra-chiquita">Guarda tus datos encriptados de forma segura para que no tengas que introducirlos la próxima vez.</p>
+                                <!-- Titulo -->
+                                <div class="row mb-3 px-5 pt-5">
+                                    <h4 class="title">
+                                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                        Métodos de pago
+                                    </h4>
+                                </div>
+                                <!-- Metodo seleccionado -->
+                                <div class="row px-5 mb-3">
+                                    <form name="metodos">
+                                        <!-- TARJETA -->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="metodo" id="tarjeta" value="tarjeta" onclick="metodoCheck()">
+                                            <label class="form-check-label" for="tarjeta">
+                                                <h5 style="font-weight: bold;">
+                                                    Tarjeta de crédito
+                                                    <img src="img/credit.png">
+                                                </h5>
+                                            </label>
+                                        </div>
+                                        <!-- PAYPAL -->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="metodo" id="paypal" value="paypal" onclick="metodoCheck()">
+                                            <label class="form-check-label" for="paypal">
+                                                <h5 style="font-weight: bold;">
+                                                    <img src="img/paypal.jpg">
+                                                </h5>
+                                            </label>
+                                        </div>
+                                        <!-- EFECTIVO -->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="metodo" id="efectivo" value="efectivo" onclick="metodoCheck()">
+                                            <label class="form-check-label" for="efectivo">
+                                                <h5 style="font-weight: bold;">
+                                                    Efectivo
+                                                    <img src="img/dinero.png" width="50px">
+                                                </h5>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row px-5 mt-5 mb-5">
+                                    <!-- Formulario de tarjeta -->
+                                    <div class="col border border-2 rounded-3 px-3 py-3 ghost" id="colTarjeta">
+                                        <form class="mb-5" name="tarjetaDatos">
+                                            <div class="row mb-4">
+                                                <div class="col">
+                                                    <label class="form-label" for="numero">Núero de tarjeta</label>
+                                                    <input name="input" type="tel" id="numero" class="form-control" placeholder="8888 88888 88888 88888" maxlength="16">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col">
+                                                    <label class="form-label" for="nombre">Nombre del Titular</label>
+                                                    <input name="input" type="tel" id="nombreT" class="form-control" placeholder="Nombre y Apellidos">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 me-2">
+                                                    <label class="form-label" for="nombre">Valido hasta</label>
+                                                    <input name="input" type="tel" id="fechT" class="form-control" placeholder="MM/AA" maxlength="5">
+                                                </div>
+                                                <div class="col">
+                                                    <label class="form-label" for="nombre">Codigo de Seguridad</label>
+                                                    <input name="input" type="tel" id="codSegurT" class="form-control" placeholder="888" maxlength="3">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- Letras chiquitas -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="checkbox" id="cboxTC" value="second_checkbox">
+                                                <label for="cboxTC" class="checkout" ><h6 style="font-weight: bold;">Guardar esta tarjeta</h6></label>
+                                                <p class="letra-chiquita">Guarda tus datos encriptados de forma segura para que no tengas que introducirlos la próxima vez.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BOTON PARA IR A PAYPAL -->
+                                    <div class="col border border-2 rounded-3 px-3 py-3 text-center ghost" id="colPaypal">
+                                        <h6>Inicia sesión con tu cuenta de Paypal</h6>
+                                        <div class=" d-grid gap-2 ">
+                                            <a href="https://www.paypal.com/mx/signin" class="btn btn-primary" type="button">Ir a Paypal</a>
+                                        </div>
+                                    </div>
+                                    <!-- METODOS DE PAGO EN EFECTIVO -->
+                                    <div class="col border border-2 rounded-3 px-3 py-3 ghost" id="colEfectivo">
+                                        <form name="efectivos" class="mt-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="efectivo" id="oxxo" value="oxxo" onclick="efectivoCheck()">
+                                                <label class="form-check-label" for="paypal">
+                                                    <h5 style="font-weight: bold;">
+                                                        Oxxo
+                                                        <img src="img/oxxo.png" width="50px">
+                                                    </h5>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="efectivo" id="7eleven" value="7eleven" onclick="efectivoCheck()">
+                                                <label class="form-check-label" for="paypal">
+                                                    <h5 style="font-weight: bold;">
+                                                        7-Eleven
+                                                        <img src="img/7eleven.png" width="35px">
+                                                    </h5>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="efectivo" id="bbva" value="bbva" onclick="efectivoCheck()">
+                                                <label class="form-check-label" for="paypal">
+                                                    <h5 style="font-weight: bold;">
+                                                        BBVA Bancomer
+                                                        <img src="img/bbva.png" width="65px">
+                                                    </h5>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,7 +435,7 @@
                         <!-- Boton para pagar -->
                         <div class="row mb-5 px-2">
                             <div class="col">
-                                <button type="button" class="btn btn-danger" style="width: 100%;">
+                                <button type="button" class="btn btn-danger" style="width: 100%;" id="btnPagar" disabled>
                                     <i class="fa fa-money" aria-hidden="true"></i> Comprar Ahora
                                 </button>
                             </div>

@@ -166,7 +166,7 @@ body {
     font-weight: bold;
 }
 
-.cuenta{
+.unselect{
     background-color: var(--color-donacion);
 }
 
@@ -200,4 +200,8 @@ body {
     color: white;
     padding: 18px;
     font-size: 18px;
+}
+
+.ghost{
+    display: none;
 }
