@@ -149,7 +149,7 @@
                     const visitorId = result.visitorId
                     localStorage.setItem("id_invitado", visitorId.substring(0,10));
                 });
-        } else localStorage.removeItem("id_invitado");
+        } else if(user) localStorage.removeItem("id_invitado");
     </script>
 </body>
 </html>
