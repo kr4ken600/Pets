@@ -40,3 +40,8 @@ li>.btn{
     font-size: 12px;
     font-weight: bold;
 }
+
+.text-muted-address{
+    --bs-text-opacity: 1;
+  color: #6c757d !important;
+}

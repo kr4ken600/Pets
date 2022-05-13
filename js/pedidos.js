@@ -46,15 +46,15 @@ function añadirProducto(clas, imgn, marca, nombre, peso, cantidad, precioUnidad
 
     //Creamos una columna para la imagen
     var colimg = document.createElement("div");
-    colimg.className = "col ps-5 pe-5 pt-3 pb-3";
+    colimg.className = "col col-xl col-xxl px-5 py-3";
 
     //Creamos una columna para los datos
     var coldatos = document.createElement("div");
-    coldatos.className = "col ps-5 pe-5 pt-3 pb-3";
+    coldatos.className = "col col-xl col-xxl px-5 py-3";
 
     //Creamos una columna para el precio
     var colprecio = document.createElement("div");
-    colprecio.className = "col-2 ps-5 pe-5 pt-3 pb-3";
+    colprecio.className = "col col-xl col-xxl px-5 py-3";
 
     //Agregamos las columnas a la fila contenedora
     prod.appendChild(colimg);

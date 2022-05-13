@@ -4,7 +4,8 @@
   "description": "API para conexion de base de datos Mongo DB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "Yonatan Ortiz",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.3",
-    "mongoose": "^6.2.8"
+    "mongoose": "^6.2.8",
+    "nodemon": "^2.0.16"
   }
 }

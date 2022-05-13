@@ -223,7 +223,7 @@ function address(length, ciudad, colonia, calle, codPostal, numero, id) {
     const direccionesCard = document.getElementById("sesion");
 
     const contenedorCard = document.createElement('div');
-    contenedorCard.className = "col-4 mb-3 btn";
+    contenedorCard.className = "col-4 col-xl-12 col-xxl-4 mb-3 btn";
 
     const card = document.createElement('div');
     card.className = "card";
@@ -237,7 +237,7 @@ function address(length, ciudad, colonia, calle, codPostal, numero, id) {
     h5.innerText = `Direccion ${length}`;
 
     const h6 = document.createElement('h6');
-    h6.classList = "card-subtitle mb-2 text-muted";
+    h6.classList = "card-subtitle mb-2 text-muted-address";
     h6.innerText = ciudad;
 
     const  p1 = document.createElement('p');

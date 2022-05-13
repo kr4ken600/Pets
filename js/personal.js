@@ -11,7 +11,12 @@ if(localStorage.getItem("sesion") === null){
             localStorage.setItem("id", data.identificador);
             localStorage.setItem("typeUser", data.typeUser);
             localStorage.setItem("userName", data.userName);
-            localStorage.setItem("mascota", data.mascota);
+
+            var mascotas = [];
+            data.mascota.forEach(elemento => {
+                mascotas.push(elemento.mascota);
+            });
+            localStorage.setItem("mascota", mascotas);
             localStorage.setItem("email", data.email);
             
             fetch(`http://localhost:9000/api/car/${localStorage.getItem('id_invitado')}`)
@@ -55,7 +60,9 @@ function setData() {
     userName.disabled = true;
 
     const mascota = document.getElementById("mascota");
-    mascota.value = localStorage.getItem("mascota");
+    var addMascota = localStorage.getItem("mascota");
+    addMascota = addMascota.replace(",", " - ").replace(",", " - ");
+    mascota.value = addMascota;
     mascota.disabled = true;
 }
 
@@ -119,7 +126,7 @@ function getAddress(length, ciudad, colonia, calle, codPostal, numero, id) {
     h5.innerText = `Direccion ${length}`;
 
     const h6 = document.createElement('h6');
-    h6.classList = "card-subtitle mb-2 text-muted";
+    h6.classList = "card-subtitle mb-2 text-muted-address";
     h6.innerText = ciudad;
 
     const  p1 = document.createElement('p');

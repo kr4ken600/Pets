@@ -11,3 +11,8 @@
 .addres-select{
     border: 1px solid var(--color-base);
 }
+
+.text-muted-address{
+    --bs-text-opacity: 1;
+  color: #6c757d !important;
+}

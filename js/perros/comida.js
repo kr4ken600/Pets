@@ -5,13 +5,9 @@ fetch("http://localhost:9000/api/products/perro/comida")
 })
 .then(
     (data) => {
-        var divP = '';
         for(var i = 0; i <= data.length -1; i++){
-            if(i < 5) divP = 'parte1';
-            else divP = 'parte2';
-            
             crearMiniatura(
-                divP,
+                "parte1",
                 data[i].imagen,
                 data[i].nombre,
                 data[i].precio,
@@ -31,7 +27,7 @@ function crearMiniatura(div, img, nombre, precio, oferta, descuento, opciones, i
     
     //Creamos un div para contener toda la informacion
     var div = document.createElement('div');
-    div.className = "col";
+    div.className = "col col-xl-3 col-xxl mb-5";
     parte1.appendChild(div);
     
     //Creamos la imgaen
@@ -89,7 +85,7 @@ function crearMiniatura(div, img, nombre, precio, oferta, descuento, opciones, i
         xhr.onreadystatechange = function () {
             if(this.readyState === 4 && this.status === 200){
                 alert("Producto agregado al carrito");
-                document.getElementById(id).selectedIndex = 0;
+                document.getElementById(id).value = 0;
                 btnCarrito.disabled = true;
             } 
         }

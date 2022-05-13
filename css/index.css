@@ -205,3 +205,15 @@ body {
 .ghost{
     display: none;
 }
+
+.footer{
+    background-color: var(--color-base);
+}
+
+.text-muted{
+    color: var(--color-white) !important;
+}
+
+.text-muted:hover{
+    color: var(--color-black) !important;
+}

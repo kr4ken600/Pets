@@ -4,13 +4,10 @@ fetch("http://localhost:9000/api/products/perro/descanso")
 })
 .then(
     (data) => {
-        var divP = '';
+        
         for(var i = 0; i <= data.length -1; i++){
-            if(i < 5) divP = 'parte1';
-            else divP = 'parte2';
-            
             crearMiniatura(
-                divP,
+                'parte1',
                 data[i].imagen,
                 data[i].nombre,
                 data[i].precio,
@@ -24,7 +21,7 @@ function crearMiniatura(div, img, nombre, precio, opciones, id) {
     var parte1 = document.getElementById(div);
     
     var div = document.createElement('div');
-    div.className = "col";
+    div.className = "col col-xl-3 col-xxl mb-5";
     parte1.appendChild(div);
     
     var imgs = document.createElement('img');
@@ -44,6 +41,7 @@ function crearMiniatura(div, img, nombre, precio, opciones, id) {
     pOpciones.innerHTML = `<b>Opciones: </b> <span>${opciones}</span>`;
 
     const btnCarrito = document.createElement('button');
+    btnCarrito.disabled = true;
     btnCarrito.className = "btn btn-success";
     btnCarrito.innerHTML = '<i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar al carrito';
     btnCarrito.onclick = () => {
@@ -71,7 +69,7 @@ function crearMiniatura(div, img, nombre, precio, opciones, id) {
         xhr.onreadystatechange = function () {
             if(this.readyState === 4 && this.status === 200){
                 alert("Producto agregado al carrito");
-                document.getElementById(id).selectedIndex = 0;
+                document.getElementById(id).value = 0;
                 btnCarrito.disabled = true;
             } 
         }
