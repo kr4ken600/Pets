@@ -16,3 +16,12 @@
     --bs-text-opacity: 1;
   color: #6c757d !important;
 }
+
+.politicas{
+    color: #6c757d;
+}
+
+.scroll{
+    overflow-y: scroll; 
+    height: 440px;
+}

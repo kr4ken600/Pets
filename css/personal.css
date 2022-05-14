@@ -42,6 +42,24 @@ li>.btn{
 }
 
 .text-muted-address{
-    --bs-text-opacity: 1;
+  --bs-text-opacity: 1;
   color: #6c757d !important;
+}
+
+.mb-n-person{
+    margin-bottom: 445px;
+}
+
+.mb-n-add{
+    margin-bottom: 236px;
+}
+
+@media (max-width: 1360px) {
+    .mb-n-person{
+        margin-bottom: 269px;
+    }
+    
+    .mb-n-add{
+        margin-bottom: 60px;
+    }
 }

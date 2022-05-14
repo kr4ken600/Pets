@@ -24,13 +24,16 @@ fetch(`http://localhost:9000/api/car/${id}`)
     })
     .then((data) => {
         data.forEach(element => {
+            var cont = 0;
             xhr = new XMLHttpRequest();
             xhr.open("GET", `http://localhost:9000/api/products/${element.id_producto}`);
             xhr.onreadystatechange = function() {
                 if(this.readyState === 4 && this.status === 200){
                     const product = JSON.parse(this.response);
+                    let status = false;
+                    cont > 3 ? status = true : status = false;
                     añadirProducto(
-                        false,
+                        status,
                         product.imagen,
                         product.nombre.split("-")[0],
                         product.nombre.split("-")[1],
@@ -39,6 +42,7 @@ fetch(`http://localhost:9000/api/car/${id}`)
                         product.oferta !== "" ? product.oferta.split("$")[1] : product.precio.split("$")[1],
                         element.precio
                     );
+                    cont ++; 
                 }
             }
             xhr.send();
@@ -52,10 +56,11 @@ fetch(`http://localhost:9000/api/car/${id}`)
 function añadirProducto(clas, imgn, marca, nombre, peso, cantidad, precioUnidad, total){
     //Obtenemos el div contenedor
     var div = document.getElementById("cont-productos");
+    clas === true ?  null : div.classList.add("scroll") ;
 
     //Creamos una fila contenedora de la informacion
     var prod = document.createElement("div");
-    clas == true ? prod.className = "row align-items-center" : prod.className = "row align-items-center";
+    prod.className = "row align-items-center";
 
     div.appendChild(prod);
 

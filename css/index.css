@@ -23,6 +23,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h3{
+    font-weight: bold;
+}
+
 .navbar{
     background-color: var(--color-base);
 }
@@ -156,9 +160,13 @@ body {
     font-style: italic;
 }
 
-.ver-mas:hover, .privacidad:hover{
+.ver-mas:hover, .politicas:hover{
     cursor: pointer;
     color: #000000;
+}
+
+.politicas{
+    text-decoration: underline black;
 }
 
 #pagoFinal{
@@ -216,4 +224,25 @@ body {
 
 .text-muted:hover{
     color: var(--color-black) !important;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-ms{
+    font-size: 28px;
+}
+
+.text-md{
+    font-size: 20px;
+}
+
+.casos{
+    font-style: italic;
+}
+
+.img-casos{
+    width: 15%;
+    float: left;
 }

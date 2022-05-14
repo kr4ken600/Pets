@@ -112,7 +112,7 @@ function getAddress(length, ciudad, colonia, calle, codPostal, numero, id) {
     const direccionesCard = document.getElementById("direccionesCard");
 
     const contenedorCard = document.createElement('div');
-    contenedorCard.className = "col-4 mb-3";
+    contenedorCard.className = "col-4 col-xl-4 col-xxl-4 mb-3";
 
     const card = document.createElement('div');
     card.className = "card";
